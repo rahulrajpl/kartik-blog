@@ -1,0 +1,95 @@
+{% load static %}
+<head>
+
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kartik Designs / Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
+    <link rel="stylesheet" href="{% static 'vendor/lightbox2/css/lightbox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.default.css' %}" id="theme-stylesheet">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/favicon.png' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+
+
+    <style>
+
+        
+        .artist_profession{
+           font-weight: bold;
+           
+        }
+
+        .artist_name{
+           font-weight: bold;
+           color:red;
+        }
+        .fadeInDown {
+            animation-name: fadeInDown;
+        }       
+        .slideInUp {
+            animation-name: slideInUp;
+        }
+        .animated {
+            visibility: visible;
+            animation-duration: 5.5s;
+            animation-fill-mode: both;
+        }
+
+        .animated_s {
+            visibility: visible;
+            animation-delay: 15s;
+            animation-duration: 10.5s;
+            animation-fill-mode: both;
+        }
+
+        .animated_slow {
+            visibility: visible;
+            animation-delay: 5s;
+            animation-duration: 25.5s;
+            animation-fill-mode: both;
+        }
+        .text-shadow {
+            text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+        }
+        @keyframes fadeInDown {
+            0% {top:0px;opacity: 0;}
+            100% {top:200px;opacity: 1;}
+            }
+
+        /* Animation */
+        .typewrite {
+            border-right: solid 3px black;
+            white-space: nowrap;
+            overflow: hidden;    
+            font-family: 'Source Code Pro', monospace;  
+            font-size: 28px;
+            color: rgba(255,255,255,.70);
+        animation: animated-text 5s steps(29,end) 1s 1 normal both,
+                    animated-cursor 600ms steps(29,end) infinite;
+        }
+
+        /* text animation */
+
+        @keyframes animated-text{
+        from{width: 0;}
+        to{width: 800px;}
+        }
+
+        /* cursor animations */
+
+        @keyframes animated-cursor{
+        from{border-right-color: white);}
+        to{border-right-color: transparent;}
+        }
+    </style>
+  </head>

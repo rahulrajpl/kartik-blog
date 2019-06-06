@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+{% include 'head.html' %}
+
+<body>
+<section id="intro" style="background-image: url('{% static 'img/bg4.jpg' %}');" class="intro">       
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="container clearfix">
+          <div class="row fadeInDown animated">
+            <div class="col-lg-8 col-lg-12 mx-auto">
+              <h2 class="">Hello, hola, नमस्ते !</h2>
+              <h1 class="italic fadeInDown animated">I am <span class="artist_name">Kartik</span></h1>
+              <p class="italic typewrite animated_s">An <span class="artist_profession"> architect
+
+              </span> by profession, and a <span class="artist_profession">digital artist</span> by passion.</p>
+              <p class="italic fadeInDown animated_slow"> Scroll down to find out more</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- intro end-->
+{% include "nav.html" %}
+{% block content %}
+
+
+
+{% endblock content %}
+<!-- JavaScript files-->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'vendor/jquery.cookie/jquery.cookie.js' %}"> </script>
+    <script src="{% static 'vendor/lightbox2/js/lightbox.min.js' %}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
+    <script src="{% static 'js/front.js' %}"></script>
+</body>
+
+</html>
