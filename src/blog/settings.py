@@ -14,7 +14,7 @@ SECRET_KEY = '5#5358$^z$#f)=4*zaq_)+s2r^yz%yf$aw74+mn&z+!@u2dsvv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['kartiktect.herokuapp.com']
 
 
 # Application definition
